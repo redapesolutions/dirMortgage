@@ -1,10 +1,9 @@
 # Angular Mortgage Widget (dirMortgage)
 Angular directive for calculating mortgage loans...
 
-##### Disclaimer: I am not in support of Interest in any financial/commercial transactions
+##### Disclaimer: Not a fan of interest rates in any financial/commercial transactions
 
 ### How to use  
-
 
 #### Basic Example
 ==================
@@ -18,7 +17,7 @@ or
 
 with extra attributes
 
-<dir:mortgage dm-template-url="" dm-principal-amount="160000" dm-default-rate="2.5"></dir:mortgage>
+<dir:mortgage dm-template-url="" dm-principal-amount="160000"></dir:mortgage>
 
 ```
 
@@ -91,7 +90,7 @@ By default the template path as been set to, and can be found in:
 ```
 
 To rewrite or modify template, please do take a cue from the default one provided, 
-with regards scope vars and actions.
+with regards to scope vars and actions.
 
 #### Default Minimum and Maximum Values
 
@@ -105,4 +104,4 @@ with regards scope vars and actions.
 - currency = '$'
 - principal amount = 0.0
 
-All, as depicted above, can be modified throught provider setter method, or added as attribute when implementing the directive
+All, as depicted above, can be modified through the ```dirMortgageServiceProvider``` mutator methods, or added as attributes when implementing the directive
