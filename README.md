@@ -6,7 +6,6 @@ Angular directive for calculating mortgage loans...
 ### How to use  
 
 #### Basic Example
-==================
 
 ```html
 <div dir-mortgage></div>
