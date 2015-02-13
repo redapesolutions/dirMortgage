@@ -127,7 +127,7 @@
       defaultPrincipalAmount: 0.0,
       currency: '$'
     };
-    this.setPath = function (path) {
+    this.setTemplatePath = function (path) {
       dirMortgageValues.templatePath = path;
     };
     this.setMinYear = function (year) {
