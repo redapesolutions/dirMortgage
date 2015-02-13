@@ -1,4 +1,4 @@
-# dirMortgage
+# Angular Mortgage Widget (dirMortgage)
 Angular directive for calculating mortgage loans...
 
 ##### Disclaimer: I am not in support of Interest in any financial/commercial transactions
@@ -6,8 +6,8 @@ Angular directive for calculating mortgage loans...
 ### How to use  
 
 
-Basic Example
-=============
+#### Basic Example
+==================
 
 ```
 <div dir-mortgage></div>
@@ -35,16 +35,17 @@ dmCurrency - set locale currency
 
 ```
 
-Installation
-============
+#### Installation
+=================
 
 ```
 var app = angular.module('yourAppName',['dirMortgage'])
 
 ```
 
-Configs
-=======
+#### Configs
+============
+
 - Setting attributes could also be done through a provider
 
 ```
@@ -63,6 +64,14 @@ app.config(function(dirMortgageServiceProvider){
   .setDefaultPrincipalAmount(float number)
   .setCurrency(string)
 });
+
+```
+
+#### Bower Install
+==================
+
+```
+bower install angular-mortgage-widget
 
 ```
 
