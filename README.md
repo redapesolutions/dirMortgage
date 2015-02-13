@@ -16,12 +16,15 @@ or
 
 <dir:mortgage></dir:mortgage>
 
-with extra attrs
+with extra attributes
 
 <dir:mortgage dm-template-url="" dm-principal-amount="160000" dm-default-rate="2.5"></dir:mortgage>
 
-Other usable attributes
+```
 
+- Other usable attributes
+
+```
 dmTemplateUrl - template url
 dmPrincipalAmount - prinicipal amount/mortgage amount
 dmDefaultRate - default interest rate per annum
@@ -36,24 +39,28 @@ dmCurrency - set locale currency
 ```
 
 #### Installation
-=================
 
-```
+```javascript
+
 var app = angular.module('yourAppName',['dirMortgage'])
 
 ```
 
 #### Configs
-============
 
 - Setting attributes could also be done through a provider
 
-```
+```javascript
 var app = angular.module('yourAppName',['dirMortgage']);
 app.config(function(dirMortgageServiceProvider){
   dirMortgageServiceProvider.setTemplatePath('/path/to/template');
+});
 
-  //other usable provider setter functions
+```
+- other usable provider setter functions
+
+```javascript
+
   .setMinYear(float number)
   .setMaxYear(float number)
   .setStepYear(float number)
@@ -63,15 +70,39 @@ app.config(function(dirMortgageServiceProvider){
   .setDefaultRate(float number)
   .setDefaultPrincipalAmount(float number)
   .setCurrency(string)
-});
 
 ```
-
 #### Bower Install
-==================
 
 ```
 bower install angular-mortgage-widget
 
 ```
 
+### More Details
+
+#### Setting Template Path
+
+By default the template path as been set to, and can be found in:
+
+```
+  templates/dirMortgage.tpl.html
+
+```
+
+To rewrite or modify template, please do take a cue from the default one provided, 
+with regards scope vars and actions.
+
+#### Default Minimum and Maximum Values
+
+- min year = 1
+- max year = 30
+- min rate = 0.5
+- max rate = 10
+- default rate = 4
+- step rate (step for interest rate increment) = 0.1
+- step year (step for year increase) = 0.1
+- currency = '$'
+- principal amount = 0.0
+
+All, as depicted above, can be modified throught provider setter method, or added as attribute when implementing the directive
