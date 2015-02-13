@@ -9,7 +9,7 @@ Angular directive for calculating mortgage loans...
 #### Basic Example
 ==================
 
-```
+```html
 <div dir-mortgage></div>
 
 or
