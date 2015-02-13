@@ -5,7 +5,7 @@
     "Mustapha Taiwo <mustytaiwo@gmail.com>"
   ],
   "description": "Angular dependent widget to calculate mortgage loans",
-  "main": "dirMortgage/dirMortgage.js",
+  "main": "dirMortgage.js",
   "keywords": [
     "angular",
     "angular",
