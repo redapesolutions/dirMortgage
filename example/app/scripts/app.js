@@ -28,5 +28,6 @@ angular
       });
   })
   .config(function (dirMortgageServiceProvider){
+    dirMortgageServiceProvider.setTemplatePath('bower_components/angular-mortgage-widget/templates/dirMortgage.tpl.html');
     dirMortgageServiceProvider.setDefaultPrincipalAmount(16000);
   });
